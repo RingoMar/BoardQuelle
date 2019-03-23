@@ -1103,6 +1103,9 @@ input[type="button"]:focus {
   button {
     width: -webkit-fill-available;
 }
+  footer{
+    position: fixed;
+  }
 
 }
 
@@ -1173,7 +1176,7 @@ h1#HeadText {
 footer {
   bottom: 0;
   width: 100%;
-  position: fixed;
+  position: relative;
 }
 
 button {
@@ -1210,4 +1213,4 @@ small.copyr {
   text-align: center;
   text-decoration: none;
   padding: 35px;
-}
+} 
