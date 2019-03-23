@@ -1104,7 +1104,7 @@ input[type="button"]:focus {
     width: -webkit-fill-available;
 }
   footer{
-    position: fixed;
+    position: fixed !important;
   }
 
 }
