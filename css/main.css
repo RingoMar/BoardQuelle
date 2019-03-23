@@ -1095,7 +1095,7 @@ input[type="button"]:focus {
     right: 0% !important;
     position: absolute;
     width: 100%;
-    top: 14%;
+    top: 8%;
 }
 }
 
@@ -1155,6 +1155,7 @@ div#top-data {
 
 h1#HeadText {
   padding-left: 10px;
+  color: #3f3628;
 }
 
 .main {
@@ -1175,4 +1176,8 @@ button#Killswitch {
     right: 10%;
     position: absolute;
     background-color: #b50000;
+}
+
+div#meta-1 {
+  width: auto;
 }

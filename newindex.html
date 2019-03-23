@@ -5,22 +5,24 @@
   <head>
 
     <meta charset="utf-8" />
-    <title>Zaquelle SB</title>
+    <title>BOARDQUELLE</title>
 
     <!-- Meta information - for search engines and other clever web bits -->
-    <meta property="og:title" content="ph webs soundboard" />
+    <meta property="og:title" content="BOARDQUELLE" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.phwebs.co.uk" />
-    <meta property="og:image" content="http://www.phwebs.co.uk/img/kitten.png"
+    <meta property="og:url" content="" />
+    <meta property="og:image"
+      content="https://static-cdn.jtvnw.net/jtv_user_pictures/e0a8f8cd8c70ca3e-profile_image-300x300.png"
       />
-    <meta name="description" content="" />
-    <meta name="keywords" content="keywords" />
+    <meta name="description" content="The Zaquelle soundbaord" />
+    <meta name="keywords" content="Zaquelle" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
-    <link rel="shortcut icon" href="https://cdn.discordapp.com/emojis/540344535780425738.png?v=1" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="shortcut icon"
+      href="https://cdn.discordapp.com/emojis/540344535780425738.png?v=1" />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/stats.js"></script>
-    <!-- <script type="text/javascript"></script> -->
   </head>
 
   <!--[if IE 7]><body class="no-javascript ie7"><![endif]-->
@@ -30,69 +32,44 @@
   <body class="no-javascript">
     <!--<![endif]-->
     <div class="main">
-    <header>
-      <div class="header">
-        <div class="grid">
-          <div id="top-data" class="col-12">
-            <img
-              src="https://static-cdn.jtvnw.net/jtv_user_pictures/e0a8f8cd8c70ca3e-profile_image-50x50.png"
-              />
-            <h1 id="HeadText">ZAQUELLE SOUNDBOARD</h1>
-            <button id="Killswitch" onclick="stopAudio(id);">STOP AUDIO</button>
+      <header>
+        <div class="header">
+          <div class="grid">
+            <div id="top-data" class="col-12">
+              <a href="https://www.twitch.tv" target="_blank"><img src="https://static-cdn.jtvnw.net/jtv_user_pictures/e0a8f8cd8c70ca3e-profile_image-50x50.png"/></a>
+              <h1 id="HeadText">BOARDQUELLE</h1>
+              <button id="Killswitch" onclick="stopAudio();">STOP AUDIO</button>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <div class="grid">
-      <div class="col-12 col-tablet-12">
-        <section>
-          <audio id="100" onplay="startsPlaying(id);" onpause="AudioStopped(id);" controls>
-            <source src="https://cdn.discordapp.com/attachments/558508929508835329/558511324523659265/uhhhh.mp3" type="audio/mp3" preload="auto" /></audio>
-          <audio id="200" onplay="startsPlaying(id);" onpause="AudioStopped(id);"  ><source src="https://cdn.discordapp.com/attachments/558508929508835329/558513135439577088/snort.mp3" type="audio/mp3" /></audio>
-          <audio id="300" onplay="startsPlaying(id);" onpause="AudioStopped(id);"  ><source src="https://cdn.discordapp.com/attachments/558508929508835329/558516697049464843/Uggghh_Oy_remix.mp3" type="audio/mp3" preload="auto" /></audio>
-          <audio id="400" onplay="startsPlaying(id);" onpause="AudioStopped(id);"  ><source src="https://cdn.discordapp.com/attachments/558508929508835329/558525718301245451/The_Derp_Knight.mp3" type="audio/mp3"  preload="auto" /></audio>
-          <audio id="500" onplay="startsPlaying(id);" onpause="AudioStopped(id);"  ><source src="https://cdn.discordapp.com/attachments/558508929508835329/558536684271173665/sneeze.mp3" type="audio/mp3" preload="auto"/></audio>
-          <audio id="600"onplay="startsPlaying(id);" onpause="AudioStopped(id);"  ><source src="https://cdn.discordapp.com/attachments/558508929508835329/558544213726199820/BELELELE_NO.mp3" type="audio/mp3" preload="auto"/></audio>
-          <audio id="700"onplay="startsPlaying(id);" onpause="AudioStopped(id);"  ><source src="https://cdn.discordapp.com/attachments/558508929508835329/558558883552034847/Candy_Shop.mp3" type="audio/mp3" preload="auto"/></audio>
-          <audio id="800"onplay="startsPlaying(id);" onpause="AudioStopped(id);"  ><source src="https://cdn.discordapp.com/attachments/558508929508835329/558562874478428160/nut_chin.mp3" type="audio/mp3" preload="auto" /></audio>
-          <!-- <ul id="doc" class="list floated soundboard clearfix"> -->
-          <ul id="doc">
-            <button onclick="document.getElementById('100').play()">UHHHHHGHHH</button>
-            <button onclick="document.getElementById('300').play()">UHHHHHGHHH (Oy remix) </button>
-            <button onclick="document.getElementById('200').play()">SNORT</button>
-            <button onclick="document.getElementById('400').play()">THE DERP KNIGHT</button>
-            <button onclick="document.getElementById('500').play()">SNEEZE</button>
-            <button onclick="document.getElementById('600').play()">BELELELELE NO!</button>
-            <button onclick="document.getElementById('700').play()">CANDY SHOP</button>
-            <button onclick="document.getElementById('800').play()">MY CHIN</button>
-            <button onclick="document.getElementById('1').play()">Fite Me</button>
-
-          </ul>
-        </section>
+      <div class="grid">
+        <div class="col-12 col-tablet-12"><section><ul id="board"></ul></section>
+        </div>
       </div>
     </div>
-  </div>
 
     <footer>
       <div class="footer">
         <div class="grid">
-          <div class="col-12">
-            <!-- <a >ABOUT</a>  -->
-            <a href="https://www.twitch.tv/zaquelle">TWITCH</a>
-            <a href="https://www.twitter.com/zaquelle">TWITTER</a>
-            <a href="https://www.instagram.com/zaquelledraws">INSTAGRAM</a>
-            <a href="https://discord.gg/zaquelle">DISCORD</a>
-            <a> || HOSTED ON DISCORD MADE BY RINGOMAR</a>
-            <!-- <small>&copy; COPYRIGHT RingoMar, 2019</small> -->
+          <div id="meta-1" class="col-12">
+            <a href="https://www.twitch.tv/zaquelle" target="_blank">TWITCH</a>
+            <a href="https://www.twitter.com/zaquelle" target="_blank">TWITTER</a>
+            <a href="https://www.instagram.com/zaquelledraws" target="_blank">INSTAGRAM</a>
+            <a href="https://discord.gg/zaquelle" target="_blank">DISCORD</a>
           </div>
+          <div class="meta-2">
+            <p id="text-meta">AUDIO HOSTED ON DISCORD</p>
+          </div>
+          <small>&copy; COPYRIGHT RingoMar, 2019</small>
         </div>
       </div>
     </footer>
 
-    <!-- Javascript loveliness. -->
+    <!-- Javascript Hard Like Steel. -->
 
-    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 
   </body>
