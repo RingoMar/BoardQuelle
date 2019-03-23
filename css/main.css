@@ -1009,7 +1009,7 @@ input[type="button"]:focus {
     right: 0% !important;
     position: absolute;
     width: 100%;
-    top: 8%;
+    top: 10%;
 }
 }
 
@@ -1095,8 +1095,15 @@ input[type="button"]:focus {
     right: 0% !important;
     position: absolute;
     width: 100%;
-    top: 8%;
+    top: 10%;
+  }
+  .main {
+    position: absolute !important;
+  }
+  button {
+    width: -webkit-fill-available;
 }
+
 }
 
 .header {
@@ -1109,9 +1116,9 @@ input[type="button"]:focus {
 
 .footer {
   background: url("../texture/footer-bg.png") repeat scroll 0 0 #2e2e2e;
-  padding-top: 20px;
-  padding-bottom: 20px;
   color: #fff;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 audio {
@@ -1166,8 +1173,9 @@ h1#HeadText {
 footer {
   bottom: 0;
   width: 100%;
-  position: relative;
+  position: fixed;
 }
+
 button {
   outline: none;
 }
@@ -1180,4 +1188,26 @@ button#Killswitch {
 
 div#meta-1 {
   width: auto;
+}
+
+.fa {
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+p#text-meta {
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+}
+
+small.copyr {
+  text-align: center;
+  text-decoration: none;
+  padding: 35px;
 }
