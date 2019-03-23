@@ -8,7 +8,7 @@ const sounds = {
   "BELELELELE NO!":"https://instaud.io/_/3srF.mp3",
   "CANDY SHOP":"https://instaud.io/_/3srO.mp3",
   "MY CHIN":"https://instaud.io/_/3srH.mp3",
-  "ZaqYes": "https://instaud.io/_/3srP.mp3",
+  "ZAQYES": "https://instaud.io/_/3srP.mp3",
 }
 
 let audios = {};
