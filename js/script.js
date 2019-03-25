@@ -33,6 +33,7 @@ const sounds = {
   'ZAQNOM': 'https://instaud.io/_/3t5a.mp3',
   'ZAQFTIE': 'https://instaud.io/_/3t5q.mp3',
   'ZAQUACKLE': 'https://instaud.io/_/3t6u.mp3',
+  'ZAQFISH': 'https://instaud.io/_/3tay.mp3',
 }
 
 let audios = {}
