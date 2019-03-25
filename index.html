@@ -13,11 +13,11 @@
     <meta property="og:image"
       content="https://static-cdn.jtvnw.net/jtv_user_pictures/e0a8f8cd8c70ca3e-profile_image-300x300.png"
       />
-    <meta name="og:site_name" content="BOARDQUELLE"/>
-    <meta name="og:description" content="The Zaquelle Soundbaord"/>
-    <meta name="og:country-name" content="USA"/>
+    <meta name="og:site_name" content="BOARDQUELLE" />
+    <meta name="og:description" content="The Zaquelle Soundbaord" />
+    <meta name="og:country-name" content="USA" />
     <meta name="description" content="The Zaquelle Soundbaord" />
-    <meta name="keywords" content="Zaquelle,Zaquelle Soundbaord,Zaquelle twitch " />
+    <meta name="keywords" content="Zaquelle,Zaquelle Soundbaord,Zaquelle twitch"/>
     <meta name="author" content="RingoMar">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
@@ -25,7 +25,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon"
       href="https://cdn.discordapp.com/emojis/540344535780425738.png?v=1" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/stats.js"></script>
   </head>
 
@@ -53,44 +54,52 @@
       </header>
 
       <div class="grid">
-        <div class="col-12 col-tablet-12"><section><ul id="board"></ul></section>
-        </div>
+        <div class="volume">
+          <i class="fa fa-volume-down"></i>
+          <input id="vol-control" type="range" value="50" min="0" max="100"
+            step="1" oninput="SetVolume(this.value)"
+            onchange="SetVolume(this.value)"></input>
+        <i class="fa fa-volume-up"></i>
+      </div>
+      <div class="col-12 col-tablet-12"><section><ul id="board"></ul></section>
       </div>
     </div>
+  </div>
 
-    <footer>
-      <div class="footer">
-        <div class="grid">
-          <div id="meta-1" class="col-12">
-            <a href="https://www.twitch.tv/zaquelle" target="_blank" class="fa
-              fa-twitch">TWITCH</a>
-            <a href="https://www.twitter.com/zaquelle" target="_blank" class="fa
-              fa-twitter">TWITTER</a>
-            <a href="https://www.instagram.com/zaquelledraws" target="_blank"
-              class="fa fa-instagram">INSTAGRAM</a>
-            <a href="https://discord.gg/zaquelle" target="_blank" class="fa
-              fa-comments-o">DISCORD</a>
-          </div>
-          <div class="meta-2">
-            <p id="text-meta">MADE BY <a
-                href="https://img-9gag-fun.9cache.com/photo/aoe4Bwm_460swp.webp"
-                target="_blank"><img id="footericon"
-                  src="https://cdn.discordapp.com/emojis/365675355270545409.png?v=1"
-                  /></a>RINGOMAR AUDIO HOSTED ON <a target="_blank" href="https://instaud.io/">INSTAUD.IO</a></p>
-          </div>
-        </footer>
-        <!-- Javascript Hard Like Steel. -->
-        <script type="text/javascript"
-          src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
-        <script async
-          src="https://www.googletagmanager.com/gtag/js?id=UA-136781090-1"></script>
-        <script>
+  <footer>
+    <div class="footer">
+      <div class="grid">
+        <div id="meta-1" class="col-12">
+          <a href="https://www.twitch.tv/zaquelle" target="_blank" class="fa
+            fa-twitch">TWITCH</a>
+          <a href="https://www.twitter.com/zaquelle" target="_blank" class="fa
+            fa-twitter">TWITTER</a>
+          <a href="https://www.instagram.com/zaquelledraws" target="_blank"
+            class="fa fa-instagram">INSTAGRAM</a>
+          <a href="https://discord.gg/zaquelle" target="_blank" class="fa
+            fa-comments-o">DISCORD</a>
+        </div>
+        <div class="meta-2">
+          <p id="text-meta">MADE BY <a
+              href="https://img-9gag-fun.9cache.com/photo/aoe4Bwm_460swp.webp"
+              target="_blank"><img id="footericon"
+                src="https://cdn.discordapp.com/emojis/365675355270545409.png?v=1"
+                /></a>RINGOMAR AUDIO HOSTED ON <a target="_blank"
+              href="https://instaud.io/">INSTAUD.IO</a></p>
+        </div>
+      </footer>
+      <!-- Javascript Hard Like Steel. -->
+      <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+      <script async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-136781090-1"></script>
+      <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'UA-136781090-1');
     </script>
-      </body>
-    </html>
+    </body>
+  </html>

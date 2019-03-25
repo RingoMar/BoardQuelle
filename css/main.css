@@ -84,7 +84,7 @@ video {
   vertical-align: baseline;
   margin: 0;
   padding: 0
-} 
+}
 
 article,
 aside,
@@ -98,7 +98,7 @@ menu,
 nav,
 section {
   display: block
-} 
+}
 
 body {
   line-height: 1
@@ -248,7 +248,7 @@ a {
 
 a:hover,
 a:active {
-  color:#d0d0d0;
+  color: #d0d0d0;
   text-decoration: underline
 }
 
@@ -1010,7 +1010,7 @@ input[type="button"]:focus {
     position: absolute;
     width: 100%;
     top: 10%;
-}
+  }
 }
 
 @media (max-width: 380px) {
@@ -1095,26 +1095,27 @@ input[type="button"]:focus {
     right: 0% !important;
     position: absolute;
     width: 100%;
-    top: 10%;
+    top: 8%;
   }
   .main {
     position: absolute !important;
   }
   button {
     width: -webkit-fill-available;
-}
-  footer{
+  }
+  footer {
     position: fixed !important;
   }
-
 }
 
-@media (max-width: 640px){
-    
+@media (max-width: 640px) {
   footer {
-      display: none;
+    display: none;
   }
+  .volume {
+    display: none;
   }
+}
 
 .header {
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, .1);
@@ -1191,9 +1192,9 @@ button {
 }
 
 button#Killswitch {
-    right: 10%;
-    position: absolute;
-    background-color: #b50000;
+  right: 10%;
+  position: absolute;
+  background-color: #b50000;
 }
 
 div#meta-1 {
@@ -1229,4 +1230,35 @@ img#gifmeme {
 
 img#footericon {
   width: 16px;
+}
+
+input#vol-control {
+  -webkit-appearance: none;
+  width: 30%;
+  height: 10px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+input#vol-control:hover {
+  opacity: 1;
+}
+
+input#vol-control::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: rgb(195, 165, 67);
+  cursor: pointer;
+}
+
+input#vol-control::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: rgb(195, 165, 67);
+  cursor: pointer;
 }
