@@ -2,6 +2,7 @@
 
 window.onload = bttvemotes
 const sounds = {
+  'BABYSHARK': 'https://instaud.io/_/3t5c.mp3',
   'UHHHHHGHHH': 'https://instaud.io/_/3srI.mp3',
   'UHHHHHGHHH (Oy remix)': 'https://instaud.io/_/3srK.mp3',
   'SNORT': 'https://instaud.io/_/3srL.mp3',
@@ -30,7 +31,7 @@ const sounds = {
   'SELFIE': 'https://instaud.io/_/3t43.mp3',
   'ZAQWOOKIE': 'https://instaud.io/_/3t45.mp3',
   'ZAQNOM': 'https://instaud.io/_/3t5a.mp3',
-  'BABYSHARK': 'https://instaud.io/_/3t5c.mp3',
+  'ZAQFTIE': 'https://instaud.io/_/3t5q.mp3',
 }
 
 let audios = {}
