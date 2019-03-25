@@ -14,13 +14,17 @@ const sounds = {
   "ZOEY'S P": "https://instaud.io/_/3sC5.mp3",
   "GOOD SHIT HAYES": "https://instaud.io/_/3sC7.mp3",
   "THE NOODS": "https://instaud.io/_/3sCa.mp3",
-  "ZAQ LIGHTSABER": "https://instaud.io/_/3sUZ.mp3",
   "ZAQWIZ": "https://instaud.io/_/3sVa.mp3",
+  "ZAQ LIGHTSABER": "https://instaud.io/_/3sUZ.mp3",
   "SQUAD 3": "https://instaud.io/_/3sVs.mp3",
   "PIANO": "https://instaud.io/_/3sVt.mp3",
   "ZAQLEWD": "https://instaud.io/_/3sVw.mp3",
   "HAYES HELICOPTER": "https://instaud.io/_/3sVu.mp3",
   "HEY JERRY": "https://instaud.io/_/3sVD.mp3",
+  "KERFUFFLES": "https://instaud.io/_/3t1w.mp3",
+  "CLEANING THE AMBO": "https://instaud.io/_/3t1x.wav",
+  "TIER 3": "https://instaud.io/_/3t1y.mp3",
+  "WHAT STRUTTIN LIKES": "https://instaud.io/_/3t1z.mp3",
 }
 
 let audios = {};
