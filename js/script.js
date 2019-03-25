@@ -14,12 +14,12 @@ const sounds = {
   "ZOEY'S P": "https://instaud.io/_/3sC5.mp3",
   "GOOD SHIT HAYES": "https://instaud.io/_/3sC7.mp3",
   "THE NOODS": "https://instaud.io/_/3sCa.mp3",
-  "ZAQLIGHTSABER": "https://instaud.io/_/3sUZ.mp3",
+  "ZAQ LIGHTSABER": "https://instaud.io/_/3sUZ.mp3",
   "ZAQWIZ": "https://instaud.io/_/3sVa.mp3",
   "SQUAD 3": "https://instaud.io/_/3sVs.mp3",
   "PIANO": "https://instaud.io/_/3sVt.mp3",
-  "zaqlewd": "https://instaud.io/_/3sVw.mp3",
-  "HAYESHELICOPTER": "https://instaud.io/_/3sVu.mp3",
+  "ZAQLEWD": "https://instaud.io/_/3sVw.mp3",
+  "HAYES HELICOPTER": "https://instaud.io/_/3sVu.mp3",
   "HEY JERRY": "https://instaud.io/_/3sVD.mp3",
 }
 
