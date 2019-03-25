@@ -29,6 +29,8 @@ const sounds = {
   'BACKSIDE': 'https://instaud.io/_/3t42.mp3',
   'SELFIE': 'https://instaud.io/_/3t43.mp3',
   'ZAQWOOKIE': 'https://instaud.io/_/3t45.mp3',
+  'ZAQNOM': 'https://instaud.io/_/3t5a.mp3',
+  'BABYSHARK': 'https://instaud.io/_/3t5c.mp3',
 }
 
 let audios = {}
