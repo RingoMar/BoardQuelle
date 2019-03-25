@@ -1,4 +1,4 @@
-﻿// def file - https://instaud.io/_/3sVa.mp3
+﻿// def file - https://instaud.io/_/3sVs.mp3
 
 window.onload = bttvemotes;
 const sounds = {
@@ -16,6 +16,11 @@ const sounds = {
   "THE NOODS": "https://instaud.io/_/3sCa.mp3",
   "ZAQLIGHTSABER": "https://instaud.io/_/3sUZ.mp3",
   "ZAQWIZ": "https://instaud.io/_/3sVa.mp3",
+  "SQUAD 3": "https://instaud.io/_/3sVs.mp3",
+  "PIANO": "https://instaud.io/_/3sVt.mp3",
+  "zaqlewd": "https://instaud.io/_/3sVw.mp3",
+  "HAYESHELICOPTER": "https://instaud.io/_/3sVu.mp3",
+  "HEY JERRY": "https://instaud.io/_/3sVD.mp3",
 }
 
 let audios = {};
