@@ -1,4 +1,4 @@
-﻿// def file - https://instaud.io/_/3sCa.mp3
+﻿// def file - https://instaud.io/_/3sVa.mp3
 
 window.onload = bttvemotes;
 const sounds = {
@@ -14,6 +14,8 @@ const sounds = {
   "ZOEY'S P": "https://instaud.io/_/3sC5.mp3",
   "GOOD SHIT HAYES": "https://instaud.io/_/3sC7.mp3",
   "THE NOODS": "https://instaud.io/_/3sCa.mp3",
+  "ZAQLIGHTSABER": "https://instaud.io/_/3sUZ.mp3",
+  "ZAQWIZ": "https://instaud.io/_/3sVa.mp3",
 }
 
 let audios = {};
