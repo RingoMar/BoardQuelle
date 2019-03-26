@@ -35,6 +35,7 @@ const sounds = {
   'ZAQUACKLE': 'https://instaud.io/_/3t6u.mp3',
   'ZAQFISH': 'https://instaud.io/_/3tay.mp3',
   'TURNIN THE TURNIPS': 'https://instaud.io/_/3taV.mp3',
+  'GRUMPY FACE': 'https://instaud.io/_/3tiJ.mp3',
 } 
 
 let audios = {}
