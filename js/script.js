@@ -31,7 +31,7 @@ const sounds = {
   'SELFIE': 'https://instaud.io/_/3t43.mp3',
   'ZAQWOOKIE': 'https://instaud.io/_/3t45.mp3',
   'ZAQNOM': 'https://instaud.io/_/3t5a.mp3',
-  'ZAQFTIE': 'https://instaud.io/_/3t5q.mp3',
+  'ZAQFITE': 'https://instaud.io/_/3t5q.mp3',
   'ZAQUACKLE': 'https://instaud.io/_/3t6u.mp3',
   'ZAQFISH': 'https://instaud.io/_/3tay.mp3',
   'TURNIN THE TURNIPS': 'https://instaud.io/_/3taV.mp3',
