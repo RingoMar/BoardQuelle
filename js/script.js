@@ -34,7 +34,8 @@ const sounds = {
   'ZAQFTIE': 'https://instaud.io/_/3t5q.mp3',
   'ZAQUACKLE': 'https://instaud.io/_/3t6u.mp3',
   'ZAQFISH': 'https://instaud.io/_/3tay.mp3',
-}
+  'TURNIN THE TURNIPS': 'https://instaud.io/_/3taV.mp3',
+} 
 
 let audios = {}
 for (let [title, url] of Object.entries(sounds)) {
