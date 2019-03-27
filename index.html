@@ -1,10 +1,6 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
   <head>
-
-    <meta charset="utf-8" />
     <title>BOARDQUELLE</title>
     <!-- Meta information - for search engines and other clever web bits -->
     <meta property="og:title" content="BOARDQUELLE" />
@@ -20,87 +16,191 @@
     <meta name="keywords" content="Zaquelle,Zaquelle Soundbaord,Zaquelle twitch,Zaquelle Murmurs"/>
     <meta name="author" content="RingoMar">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
-    <link rel="stylesheet"
+    <link rel ="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+      href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled-4.7.3.min.css">
     <link rel="shortcut icon"
       href="https://cdn.discordapp.com/emojis/540344535780425738.png?v=1" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
     <script
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/stats.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <style>@-webkit-keyframes chartjs-render-animation {
+      from {
+        opacity: 0.99
+      }
+    
+      to {
+        opacity: 1
+      }
+    }
+    
+    @keyframes chartjs-render-animation {
+      from {
+        opacity: 0.99
+      }
+    
+      to {
+        opacity: 1
+      }
+    }
+    .chartjs-render-monitor {
+      -webkit-animation: chartjs-render-animation 0.001s;
+      animation: chartjs-render-animation 0.001s;
+    }
+  </style>
+      
+     
   </head>
+  <body aria-busy="true"> <!--Main Navigation-->
+    <header>
 
-  <!--[if IE 7]><body class="no-javascript ie7"><![endif]-->
-  <!--[if IE 8]><body class="no-javascript ie8"><![endif]-->
-  <!--[if IE 9]><body class="no-javascript ie9"><![endif]-->
-  <!--[if !IE]>-->
-  <body class="no-javascript">
-    <!--<![endif]-->
-    <div class="main">
-      <header>
-        <div class="header">
-          <div class="grid">
-            <div id="top-data" class="col-12">
-              <a href="https://www.twitch.tv" target="_blank"><img
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-dark indigo">
+
+        <!-- Additional container -->
+        <div class="container">
+
+          <!-- Navbar brand -->
+          <a href="https://www.twitch.tv/zaquelle" target="_blank"><img
                   src="https://static-cdn.jtvnw.net/jtv_user_pictures/e0a8f8cd8c70ca3e-profile_image-50x50.png"
                   /></a>
-              <h1 id="HeadText">BOARDQUELLE</h1>
-              <a href="https://www.twitch.tv" target="_blank">
-                <img id="gifmeme" src="texture/preload.gif" /></a>
-              <button id="Killswitch" onclick="stopAudio();"><i class="fa fa-stop" aria-hidden="true"></i><span>STOP AUDIO</span></button>
+          <a class="navbar-brand" href="/"><h3>BORADQUELLE</h3></a>
+          <a href="https://www.twitch.tv/zaquelle" target="_blank">
+            <img id="gifmeme" src="texture/preload.gif" /></a>
+
+          <!-- Collapsible content -->
+          <div class="navbar-collapse collapse" id="basicExampleNav" >
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+              <div class="volslide">
+              <i class="fa fa-volume-down"></i>
+              <input id="vol-control" type="range" value="50" min="0" max="100"
+                step="1" oninput="SetVolume(this.value)"
+                onchange="SetVolume(this.value)"></input>
+            <i class="fa fa-volume-up"></i>
+          </div>
+              <li class="nav-item active">
+                <button id="Killswitch" onclick="stopAudio();"><i class="fa fa-stop" aria-hidden="true"></i><span>STOP AUDIO</span></button>
+                </a>
+              </li>
+              <li class="sctop">
+                SAMPLE COUNT: <span id="scount"></span>
+              </li>
+            </ul>
+          </div>
+          <!-- Collapsible content -->
+        </div>
+        <!-- Additional container -->
+
+      </nav>
+      <!--/.Navbar-->
+
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="mt-5">
+
+      <!--Main container-->
+      <div class="container">
+
+        <!--Grid row-->
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-md-7 mb-4">
+
+            <div class="view overlay z-depth-1-half">
+              <img
+                src="texture/zaqA.png"
+                class="card-img-top" alt="">
+              <div class="mask rgba-white-light"></div>
             </div>
+
+          </div>
+
+          <!--Grid column-->
+          
+          <!--Grid column-->
+          <div class="col-md-5 mb-4">
+            
+            <h2>Zaquelle Apparel</h2>
+            <hr>
+            <p>Oh did I say apparel? I meant to say a mug and a sticker. Zaquelle once said shirts soon ™ 
+              errr same thing she has been saying about that Tier 3 emote. Well for now get this MUG AND STICKER</p>
+              <a href="https://www.designbyhumans.com/shop/Zaquelle/" class="btn btn-indigo
+              waves-effect waves-light">Get it now!</a>
+
+            </div>
+            <!--Grid column-->
+            
+            <div class="grid">
+          </div>
+          <div class="col-16 col-tablet-12"><section><ul id="board"></ul></section>
           </div>
         </div>
-      </header>
-
-      <div class="grid">
-        <div class="volume">
-          <i class="fa fa-volume-down"></i>
-          <input id="vol-control" type="range" value="50" min="0" max="100"
-            step="1" oninput="SetVolume(this.value)"
-            onchange="SetVolume(this.value)"></input>
-        <i class="fa fa-volume-up"></i>
-      </div>
-      <div class="col-12 col-tablet-12"><section><ul id="board"></ul></section>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <div class="footer">
-      <div class="grid">
-        <div id="meta-1" class="col-12">
-          <a href="https://www.twitch.tv/zaquelle" target="_blank" class="fa
-            fa-twitch">TWITCH</a>
-          <a href="https://www.twitter.com/zaquelle" target="_blank" class="fa
-            fa-twitter">TWITTER</a>
-          <a href="https://www.instagram.com/zaquelledraws" target="_blank"
-            class="fa fa-instagram">INSTAGRAM</a>
-          <a href="https://discord.gg/zaquelle" target="_blank" class="fa
-            fa-comments-o">DISCORD</a>
         </div>
-        <div class="meta-2">
-          <p id="text-meta">MADE BY <a
-              href="https://img-9gag-fun.9cache.com/photo/aoe4Bwm_460swp.webp"
-              target="_blank"><img id="footericon"
-                src="https://cdn.discordapp.com/emojis/365675355270545409.png?v=1"
-                /></a>RINGOMAR AUDIO HOSTED ON <a target="_blank"
-              href="https://instaud.io/">INSTAUD.IO</a></p>
-        </div>
-      </footer>
-      <!-- Javascript Hard Like Steel. -->
-      <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <script type="text/javascript" src="js/script.js"></script>
-      <script async
-        src="https://www.googletagmanager.com/gtag/js?id=UA-136781090-1"></script>
-      <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        <!--Grid row-->
 
-      gtag('config', 'UA-136781090-1');
-    </script>
-    </body>
+        <!--Grid row-->
+
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+      </div>
+      <!--Main container-->
+
+    </main>
+    <!--Main layout-->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small special-color-dark pt-4">
+
+      <!-- Footer Elements -->
+      <div class="container">
+
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+          <li class="list-inline-item">
+            <a class="btn-floating btn-li mx-1">
+              <i class="fa fa-twitter"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-twitch">
+              <i class="fa fa-twitch"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-danger">
+              <i class="fa fa-instagram"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-discord mx-1">
+              <i class="fa fa-comments-o"> </i>
+            </a>
+          </li>
+        </ul>
+        <!-- Social buttons -->
+
+      </div>
+      <!-- Footer Elements -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">Designed and Developed by: <a href=""> RINGOMAR</a>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <div class="hiddendiv common"></div>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
   </html>

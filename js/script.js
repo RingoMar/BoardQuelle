@@ -35,7 +35,8 @@ const sounds = {
   'ZAQUACKLE': 'https://instaud.io/_/3t6u.mp3',
   'ZAQFISH': 'https://instaud.io/_/3tay.mp3',
   'TURNIN THE TURNIPS': 'https://instaud.io/_/3taV.mp3',
-  'GRUMPY FACE': 'https://instaud.io/_/3tiJ.mp3',
+  'YOU\'RE SQUAD 3': 'https://instaud.io/_/3tqg.mp3',
+  'Hazer': 'https://instaud.io/_/3tqM.mp3',
 } 
 
 let audios = {}
@@ -83,3 +84,15 @@ function SetVolume (val) {
     volume.volume = val / 100
   }
 }
+
+function objectLength() {
+  var result = 0;
+  for(var prop in sounds) {
+    if (sounds.hasOwnProperty(prop)) {
+      result++;
+    }
+  }
+  return result;
+}
+
+document.getElementById('scount').innerHTML = objectLength();
