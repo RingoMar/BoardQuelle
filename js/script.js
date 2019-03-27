@@ -37,6 +37,7 @@ const sounds = {
   'TURNIN THE TURNIPS': 'https://instaud.io/_/3taV.mp3',
   'YOU\'RE SQUAD 3': 'https://instaud.io/_/3tqg.mp3',
   'Hazer': 'https://instaud.io/_/3tqM.mp3',
+  'A ZAQUELLE LULLABY': 'https://instaud.io/_/3tu5.mp3',
 } 
 
 let audios = {}
