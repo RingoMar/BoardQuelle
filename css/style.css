@@ -3,6 +3,7 @@ body {
 }
 
 nav.navbar.navbar-expand-lg.navbar-dark.indigo {
+  color:#f3f0e1;
   background: #ebebe5 url(../texture/bg-texture.png) fixed repeat center top;
 }
 
@@ -28,6 +29,7 @@ main.mt-5 {
 
 i.fa.fa-stop {
   padding: unset;
+  font-size: 20px !important;
   padding-right: 5px;
 }
 
@@ -235,4 +237,22 @@ li.sctop {
   font-weight: bold;
   margin: 10px;
   color: #8a7047;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: unset; 
+  border-radius: 0px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #dacf9d; 
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f3f0e1; 
 }
