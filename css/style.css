@@ -1,13 +1,15 @@
 body {
+  background-color: #f4f2e4;
   background: #ebebe5 url(../texture/bg-texture.png) fixed repeat center top;
 }
 
 nav.navbar.navbar-expand-lg.navbar-dark.indigo {
-  color:#f3f0e1;
+  background-color: #f3f0e1 !important;
   background: #ebebe5 url(../texture/bg-texture.png) fixed repeat center top;
 }
 
 footer.page-footer.font-small.special-color-dark.pt-4 {
+  background-color: unset !important;
   background: url(../texture/footer-bg.png) repeat scroll 0 0 #2e2e2e;
 }
 
