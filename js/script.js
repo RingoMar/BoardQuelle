@@ -41,6 +41,7 @@ const sounds = {
   'ZAQ HA HA': 'https://instaud.io/_/3u0B.mp3',
   'HAYRPES': 'https://instaud.io/_/3u0N.mp3',
   'ZAQGOAL': 'https://instaud.io/_/3u15.mp3',
+  'HASING': 'https://instaud.io/_/3ubr.mp3',
 } 
 
 let audios = {}
