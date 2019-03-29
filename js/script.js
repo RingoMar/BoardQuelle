@@ -26,9 +26,9 @@ const sounds = {
   'CLEANING THE AMBO': 'https://instaud.io/_/3t1x.wav',
   'TIER 3': 'https://instaud.io/_/3t1y.mp3',
   'WHAT STRUTTIN LIKES': 'https://instaud.io/_/3t1z.mp3',
-  'ZAQ PARKING AMBO': 'https://instaud.io/_/3t44.mp3',
   'BACKSIDE': 'https://instaud.io/_/3t42.mp3',
   'SELFIE': 'https://instaud.io/_/3t43.mp3',
+  'ZAQ PARKING AMBO': 'https://instaud.io/_/3t44.mp3',
   'ZAQWOOKIE': 'https://instaud.io/_/3t45.mp3',
   'ZAQNOM': 'https://instaud.io/_/3t5a.mp3',
   'ZAQFITE': 'https://instaud.io/_/3t5q.mp3',
@@ -40,6 +40,7 @@ const sounds = {
   'A ZAQUELLE LULLABY': 'https://instaud.io/_/3tu5.mp3',
   'ZAQ HA HA': 'https://instaud.io/_/3u0B.mp3',
   'HAYRPES': 'https://instaud.io/_/3u0N.mp3',
+  'ZAQGOAL': 'https://instaud.io/_/3u15.mp3',
 } 
 
 let audios = {}
