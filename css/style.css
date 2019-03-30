@@ -37,10 +37,12 @@ i.fa.fa-stop {
 
 i.fa.fa-volume-up {
   color: #8a7047;
+  padding: 19px 8px 0px 8px;
 }
 
 i.fa.fa-volume-down {
   color: #8a7047;
+  padding: 20px 8px 0px 8px;
 }
 
 i.fa.fa-twitter {
@@ -225,6 +227,9 @@ h3 {
   i.fa.fa-volume-up {
     display: none;
   }
+  div#top-info {
+    display: none;
+  }
 
   main.mt-5 {
     margin-top: 90px !important;
@@ -237,8 +242,12 @@ h3 {
 
 li.sctop {
   font-weight: bold;
-  margin: 10px;
-  color: #8a7047;
+  margin: 0px 0px 2px 0px;
+  cursor: help !important;
+}
+
+li.nav-item.active {
+  margin-top: 1px;
 }
 
 ::-webkit-scrollbar {
@@ -258,3 +267,10 @@ li.sctop {
 ::-webkit-scrollbar-thumb:hover {
   background: #bea62e; 
 }
+
+div#top-info {
+  cursor: help !important;
+  margin: 2px !important;
+  padding: 0px 10px 0px 0px;
+}
+
