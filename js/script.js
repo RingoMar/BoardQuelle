@@ -50,6 +50,19 @@ for (let [title, url] of Object.entries(sounds)) {
   audios[title] = new Audio(url)
 }
 
+String.prototype.toHHMMSS = function () {
+  var sec_num = parseInt(this, 10); // don't forget the second param
+  var hours   = Math.floor(sec_num / 3600);
+  var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
+  var seconds = sec_num - (hours * 3600) - (minutes * 60);
+
+  if (hours   < 10) {hours   = "0"+hours;}
+  if (minutes < 10) {minutes = "0"+minutes;}
+  if (seconds < 10) {seconds = "0"+seconds;}
+  return hours + ':' + minutes + ':' + seconds;
+}
+  
+
 let board = document.getElementById('board')
 for (let title of Object.keys(audios)) {
   let button = document.createElement('button')
@@ -59,7 +72,10 @@ for (let title of Object.keys(audios)) {
   button.onclick = function(id){
     let audio = audios[event.target.dataset['audio']]
     adur = Math.round(audio.duration)
-    document.getElementById("time").innerHTML = adur;
+    var date = new Date(null);
+    date.setSeconds(adur); // specify value for SECONDS here
+    var timeString = date.toISOString().substr(11, 8);
+    document.getElementById("time").innerHTML = timeString;
     document.getElementById("lastplay").innerHTML = id.target.id;
   }
   board.appendChild(button)
@@ -78,7 +94,7 @@ for (let title of Object.keys(audios)) {
 
 function stopAudio () {
   let stop = audios[event.target.dataset['audio']]
-  document.getElementById("time").innerHTML = "--";
+  document.getElementById("time").innerHTML = "00:00:00";
   document.getElementById("lastplay").innerHTML = "-----";
   for (let stop of Object.values(audios)) {
     stop.pause()
