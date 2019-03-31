@@ -1,7 +1,5 @@
-﻿// def file - https://instaud.io/_/3sVs.mp3
-
+﻿
 window.onload = bttvemotes
-// var slen = 0;
 const sounds = {
   'BABYSHARK': 'https://instaud.io/_/3t5c.mp3',
   'UHHHHHGHHH': 'https://instaud.io/_/3srI.mp3',
@@ -21,7 +19,7 @@ const sounds = {
   'SQUAD 3': 'https://instaud.io/_/3sVs.mp3',
   'PIANO': 'https://instaud.io/_/3sVt.mp3',
   'ZAQLEWD': 'https://instaud.io/_/3sVw.mp3',
-  'HAYES HELICOPTER': 'https://instaud.io/_/3sVu.mp3',
+  'HAYES HELICOPTER': 'https://instaud.io/_/3uGL.mp3',
   'HEY JERRY': 'https://instaud.io/_/3sVD.mp3',
   'KERFUFFLES': 'https://instaud.io/_/3t1w.mp3',
   'CLEANING THE AMBO': 'https://instaud.io/_/3t1x.wav',
@@ -51,19 +49,6 @@ for (let [title, url] of Object.entries(sounds)) {
   audios[title] = new Audio(url)
 }
 
-String.prototype.toHHMMSS = function () {
-  var sec_num = parseInt(this, 10); // don't forget the second param
-  var hours   = Math.floor(sec_num / 3600);
-  var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
-  var seconds = sec_num - (hours * 3600) - (minutes * 60);
-
-  if (hours   < 10) {hours   = "0"+hours;}
-  if (minutes < 10) {minutes = "0"+minutes;}
-  if (seconds < 10) {seconds = "0"+seconds;}
-  return hours + ':' + minutes + ':' + seconds;
-}
-  
-
 let board = document.getElementById('board')
 for (let title of Object.keys(audios)) {
   let button = document.createElement('button')
@@ -74,7 +59,7 @@ for (let title of Object.keys(audios)) {
     let audio = audios[event.target.dataset['audio']]
     adur = Math.round(audio.duration)
     var date = new Date(null);
-    date.setSeconds(adur); // specify value for SECONDS here
+    date.setSeconds(adur);
     var timeString = date.toISOString().substr(11, 8);
     document.getElementById("time").innerHTML = timeString;
     document.getElementById("lastplay").innerHTML = id.target.id;
