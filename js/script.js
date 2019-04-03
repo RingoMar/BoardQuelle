@@ -82,7 +82,7 @@ for (let title of Object.keys(audios)) {
 function stopAudio () {
   let stop = audios[event.target.dataset['audio']]
   document.getElementById("time").innerHTML = "00:00:00";
-  document.getElementById("lastplay").innerHTML = "-----";
+  document.getElementById("lastplay").innerHTML = "------";
   for (let stop of Object.values(audios)) {
     stop.pause()
     stop.currentTime = 0

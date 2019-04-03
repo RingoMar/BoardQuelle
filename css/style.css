@@ -164,7 +164,7 @@ input#vol-control {
   width: 300px;
   margin: auto;
   height: 10px;
-  background: #d3d3d3;
+  background: #c2b280;
   outline: none;
   opacity: 0.7;
   -webkit-transition: .2s;
@@ -232,9 +232,11 @@ h3 {
   }
 
   main.mt-5 {
-    margin-top: 90px !important;
+    margin-top: 135px !important;
   }
-
+  li.sctop {
+    margin: 0px -2px 0px 2px !important;
+  }
   .collapse:not(.show) {
     display: unset;
   }
@@ -272,5 +274,17 @@ div#top-info {
   cursor: help !important;
   margin: 2px !important;
   padding: 0px 10px 0px 0px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .075) !important;
+  background: #ebebe5 url(../texture/bg-texture.png) fixed repeat center top;
+  color: black;
 }
 
+li.btn.btn-secondary.sctop {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .075) inset;
+  background: #c2b280 !important;
+}
+
+a.btn.btn-success.waves-effect.waves-light {
+  background-color: #c2b280 !important;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .075) inset;
+}
