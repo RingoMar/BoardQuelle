@@ -16,7 +16,7 @@ const sounds = {
   'THE NOODS': 'https://instaud.io/_/3sCa.mp3',
   'ZAQWIZ': 'https://instaud.io/_/3sVa.mp3',
   'ZAQ LIGHTSABER': 'https://instaud.io/_/3uHj.mp3',
-  'SQUAD 3': 'https://instaud.io/_/3uH3.mp3',
+  'SQUAD 3': 'https://instaud.io/_/3sVs.mp3',
   'PIANO': 'https://instaud.io/_/3sVt.mp3',
   'ZAQLEWD': 'https://instaud.io/_/3sVw.mp3',
   'HAYES HELICOPTER': 'https://instaud.io/_/3uGY.mp3',
