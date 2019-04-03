@@ -34,7 +34,7 @@ const sounds = {
   'ZAQUACKLE': 'https://instaud.io/_/3t6u.mp3',
   'ZAQFISH': 'https://instaud.io/_/3tay.mp3',
   'TURNIN THE TURNIPS': 'https://instaud.io/_/3taV.mp3',
-  'YOU\'RE SQUAD 3': 'https://instaud.io/_/3tqg.mp3',
+  'YOU\'RE SQUAD 3': 'https://instaud.io/_/3uH3.mp3',
   'Hazer': 'https://instaud.io/_/3tqM.mp3',
   'A ZAQUELLE LULLABY': 'https://instaud.io/_/3uHq.mp3',
   'ZAQ HA HA': 'https://instaud.io/_/3u0B.mp3',
