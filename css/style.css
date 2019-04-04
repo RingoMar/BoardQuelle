@@ -288,3 +288,11 @@ a.btn.btn-success.waves-effect.waves-light {
   background-color: #c2b280 !important;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, .075) inset;
 }
+
+button#CLEANING-THE-AMBO {
+    display: inline-flex;
+}
+
+button#CAN-I-FIT {
+    display: inline-flex;
+}

@@ -43,6 +43,8 @@ const sounds = {
   'HASING': 'https://instaud.io/_/3ubr.mp3',
   'ZAQCOKE': 'https://instaud.io/_/3uEK.mp3',
   'RA..ZAQUELLE': 'https://instaud.io/_/3uHQ.mp3',
+  'ZAQSHORT': 'https://instaud.io/_/3vvN.mp3',
+  'CAN I FIT': 'https://instaud.io/_/3vvO.mp3',
 } 
 
 let audios = {}
@@ -54,7 +56,7 @@ let board = document.getElementById('board')
 for (let title of Object.keys(audios)) {
   let button = document.createElement('button')
   button.textContent = title
-  button.setAttribute("id", title)
+  button.setAttribute("id", title.replace(/\s+/g, '-'))
   button.dataset['audio'] = title
   button.onclick = function(id){
     let audio = audios[event.target.dataset['audio']]
@@ -63,7 +65,8 @@ for (let title of Object.keys(audios)) {
     date.setSeconds(adur);
     var timeString = date.toISOString().substr(11, 8);
     document.getElementById("time").innerHTML = timeString;
-    document.getElementById("lastplay").innerHTML = id.target.id;
+    document.getElementById("lastplay").innerHTML = title;
+    // document.getElementById("lastplay").innerHTML = id.target.id;
   }
   board.appendChild(button)
 }
@@ -114,3 +117,5 @@ function objectLength() {
 }
 
 document.getElementById('scount').innerHTML = objectLength();
+var img = $('<img>').attr("src", 'https://static-cdn.jtvnw.net/emoticons/v1/1766312/1.0').appendTo($('#CAN-I-FIT'));
+var img = $('<img>').attr("src", 'https://static-cdn.jtvnw.net/emoticons/v1/1766312/1.0').appendTo($("#CLEANING-THE-AMBO"));
