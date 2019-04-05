@@ -1,5 +1,4 @@
-﻿
-window.onload = bttvemotes
+﻿window.onload = bttvemotes
 const sounds = {
   'BABYSHARK': 'https://instaud.io/_/3uH5.mp3',
   'UHHHHHGHHH': 'https://instaud.io/_/3srI.mp3',
@@ -34,7 +33,7 @@ const sounds = {
   'ZAQUACKLE': 'https://instaud.io/_/3t6u.mp3',
   'ZAQFISH': 'https://instaud.io/_/3tay.mp3',
   'TURNIN THE TURNIPS': 'https://instaud.io/_/3taV.mp3',
-  'YOU\'RE SQUAD 3': 'https://instaud.io/_/3uH3.mp3',
+  "YOU'RE SQUAD 3": 'https://instaud.io/_/3uH3.mp3',
   'Hazer': 'https://instaud.io/_/3tqM.mp3',
   'A ZAQUELLE LULLABY': 'https://instaud.io/_/3uHq.mp3',
   'ZAQ HA HA': 'https://instaud.io/_/3u0B.mp3',
@@ -45,7 +44,8 @@ const sounds = {
   'RA..ZAQUELLE': 'https://instaud.io/_/3uHQ.mp3',
   'ZAQSHORT': 'https://instaud.io/_/3vvN.mp3',
   'CAN I FIT': 'https://instaud.io/_/3vvO.mp3',
-} 
+  'FUCK SQUAD 2': 'https://instaud.io/_/3vHS.mp3'
+}
 
 let audios = {}
 for (let [title, url] of Object.entries(sounds)) {
@@ -56,43 +56,43 @@ let board = document.getElementById('board')
 for (let title of Object.keys(audios)) {
   let button = document.createElement('button')
   button.textContent = title
-  button.setAttribute("id", title.replace(/\s+/g, '-'))
+  button.setAttribute('id', title.replace(/\s+/g, '-'))
   button.dataset['audio'] = title
-  button.onclick = function(id){
+  button.onclick = function (id) {
     let audio = audios[event.target.dataset['audio']]
     adur = Math.round(audio.duration)
-    var date = new Date(null);
-    date.setSeconds(adur);
-    var timeString = date.toISOString().substr(11, 8);
-    document.getElementById("time").innerHTML = timeString;
-    document.getElementById("lastplay").innerHTML = title;
-    // document.getElementById("lastplay").innerHTML = id.target.id;
+    var date = new Date(null)
+    date.setSeconds(adur)
+    var timeString = date.toISOString().substr(11, 8)
+    document.getElementById('time').innerHTML = timeString
+    document.getElementById('lastplay').innerHTML = title
+  // document.getElementById("lastplay").innerHTML = id.target.id
   }
   board.appendChild(button)
 }
-  
-  board.addEventListener('click', function (event) {
-    let audio = audios[event.target.dataset['audio']]
-    if (audio) {
-      for (let audio of Object.values(audios)) {
-        audio.pause()
-        audio.currentTime = 0
-      }
-      audio.play()
+
+board.addEventListener('click', function (event) {
+  let audio = audios[event.target.dataset['audio']]
+  if (audio) {
+    for (let audio of Object.values(audios)) {
+      audio.pause()
+      audio.currentTime = 0
     }
+    audio.play()
+  }
 })
 
 function stopAudio () {
   let stop = audios[event.target.dataset['audio']]
-  document.getElementById("time").innerHTML = "00:00:00";
-  document.getElementById("lastplay").innerHTML = "------";
+  document.getElementById('time').innerHTML = '00:00:00'
+  document.getElementById('lastplay').innerHTML = '------'
   for (let stop of Object.values(audios)) {
     stop.pause()
     stop.currentTime = 0
   }
 }
 
-var bbtv = new Array('https://cdn.betterttv.net/emote/5b1c23eaae1b166cf54e203e/3x', 'https://cdn.betterttv.net/emote/5a5ed26e6bcd9a06f4fc7de6/3x', 'https://cdn.betterttv.net/emote/5b47a5af0f10311f6e9cf8e3/3x', 'https://cdn.betterttv.net/emote/5b47a5c90f10311f6e9cf8e4/3x', 'https://cdn.betterttv.net/emote/5b915f874cc67c7ad8196855/3x', 'https://cdn.betterttv.net/emote/5b9ab54fe87c0e590d167aba/3x', 'https://cdn.betterttv.net/emote/5ba302062192445767f61a0a/3x', 'https://cdn.betterttv.net/emote/5bcf5c2c4d02f55ed86a7361/3x', 'https://cdn.betterttv.net/emote/5c1dc8c0f7fd1c1c345d1e7f/3x', 'https://cdn.betterttv.net/emote/5c63a3161cbe12203117ac22/3x', 'https://cdn.betterttv.net/emote/5992549c6782b936bdeafe1b/3x','https://cdn.betterttv.net/emote/5a5ed3456bcd9a06f4fc7dee/3x','https://cdn.betterttv.net/emote/5bcf5c024d02f55ed86a735d/3x','https://cdn.discordapp.com/emojis/454150085077499915.gif?v=1','https://cdn.discordapp.com/emojis/453335514154795009.png?v=1')
+var bbtv = new Array('https://cdn.betterttv.net/emote/5b1c23eaae1b166cf54e203e/3x', 'https://cdn.betterttv.net/emote/5a5ed26e6bcd9a06f4fc7de6/3x', 'https://cdn.betterttv.net/emote/5b47a5af0f10311f6e9cf8e3/3x', 'https://cdn.betterttv.net/emote/5b47a5c90f10311f6e9cf8e4/3x', 'https://cdn.betterttv.net/emote/5b915f874cc67c7ad8196855/3x', 'https://cdn.betterttv.net/emote/5b9ab54fe87c0e590d167aba/3x', 'https://cdn.betterttv.net/emote/5ba302062192445767f61a0a/3x', 'https://cdn.betterttv.net/emote/5bcf5c2c4d02f55ed86a7361/3x', 'https://cdn.betterttv.net/emote/5c1dc8c0f7fd1c1c345d1e7f/3x', 'https://cdn.betterttv.net/emote/5c63a3161cbe12203117ac22/3x', 'https://cdn.betterttv.net/emote/5992549c6782b936bdeafe1b/3x', 'https://cdn.betterttv.net/emote/5a5ed3456bcd9a06f4fc7dee/3x', 'https://cdn.betterttv.net/emote/5bcf5c024d02f55ed86a735d/3x', 'https://cdn.discordapp.com/emojis/454150085077499915.gif?v=1', 'https://cdn.discordapp.com/emojis/453335514154795009.png?v=1')
 
 function bttvemotes () {
   var randomNum = Math.floor(Math.random() * bbtv.length)
@@ -106,16 +106,25 @@ function SetVolume (val) {
   }
 }
 
-function objectLength() {
-  var result = 0;
-  for(var prop in sounds) {
+function objectLength () {
+  var result = 0
+  for (var prop in sounds) {
     if (sounds.hasOwnProperty(prop)) {
-      result++;
+      result++
     }
   }
-  return result;
+  return result
 }
 
-document.getElementById('scount').innerHTML = objectLength();
-var img = $('<img>').attr("src", 'https://static-cdn.jtvnw.net/emoticons/v1/1766312/1.0').appendTo($('#CAN-I-FIT'));
-var img = $('<img>').attr("src", 'https://static-cdn.jtvnw.net/emoticons/v1/1766312/1.0').appendTo($("#CLEANING-THE-AMBO"));
+$(document).ready(function () {
+  $('#soundfind').on('keyup', function () {
+    var value = $(this).val().toLowerCase()
+    $('#board *').filter(function () {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    })
+  })
+})
+
+document.getElementById('scount').innerHTML = objectLength()
+var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766312/1.0').appendTo($('#CAN-I-FIT'))
+var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766312/1.0').appendTo($('#CLEANING-THE-AMBO'))
