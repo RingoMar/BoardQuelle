@@ -44,8 +44,8 @@ const sounds = {
   'RA..ZAQUELLE': 'https://instaud.io/_/3uHQ.mp3',
   'ZAQSHORT': 'https://instaud.io/_/3vvN.mp3',
   'CAN I FIT': 'https://instaud.io/_/3vvO.mp3',
-  'FUCK SQUAD 2': 'https://instaud.io/_/3vHS.mp3'
-  'SUH DUDE': 'https://instaud.io/_/3wCi.mp3'
+  'FUCK SQUAD 2': 'https://instaud.io/_/3vHS.mp3',
+  'SUH DUDE': 'https://instaud.io/_/3wCi.mp3',
 }
 
 let audios = {}
