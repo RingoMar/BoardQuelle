@@ -10,9 +10,9 @@ const sounds = {
   'CANDY SHOP': 'https://instaud.io/_/3uHc.mp3',
   'MY CHIN': 'https://instaud.io/_/3srH.mp3',
   'ZAQYES': 'https://instaud.io/_/3srP.mp3',
-  "ZOEY'S P": 'https://instaud.io/_/3sC5.mp3',
+  "ZOEY'S P": 'https://instaud.io/_/3x3S.mp3',
   'GOOD SHIT HAYES': 'https://instaud.io/_/3sC7.mp3',
-  'THE NOODS': 'https://instaud.io/_/3sCa.mp3',
+  'THE NOODS': 'https://instaud.io/_/3x3U.mp3',
   'ZAQWIZ': 'https://instaud.io/_/3sVa.mp3',
   'ZAQ LIGHTSABER': 'https://instaud.io/_/3uHj.mp3',
   'SQUAD 3': 'https://instaud.io/_/3sVs.mp3',
@@ -46,6 +46,15 @@ const sounds = {
   'CAN I FIT': 'https://instaud.io/_/3vvO.mp3',
   'FUCK SQUAD 2': 'https://instaud.io/_/3vHS.mp3',
   'SUH DUDE': 'https://instaud.io/_/3wCi.mp3',
+  'LAUGHING HICCUPS': 'https://instaud.io/_/3x3u.mp3',
+  'ONE OF US': 'https://instaud.io/_/3x3v.mp3',
+  // 'THAT 69': 'https://instaud.io/_/3x3w.mp3',
+  'THAT 69': 'https://instaud.io/_/3x3x.mp3',
+  'ZAQGASM': 'https://instaud.io/_/3x3z.mp3',
+  'ZAQHMM': 'https://instaud.io/_/3x3C.mp3',
+  "ZAQUELLE'S LAND": 'https://instaud.io/_/3x3E.mp3',
+  "ZAQSTEALING": 'https://instaud.io/_/3x3I.mp3',
+  "IS IT SQUAD 3?": 'https://instaud.io/_/3x3W.mp3',
 }
 
 let audios = {}
@@ -129,3 +138,5 @@ $(document).ready(function () {
 document.getElementById('scount').innerHTML = objectLength()
 var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766312/1.0').appendTo($('#CAN-I-FIT'))
 var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766312/1.0').appendTo($('#CLEANING-THE-AMBO'))
+var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766312/1.0').appendTo($('#ZAQGASM'))
+var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766312/1.0').appendTo($('#THAT-69'))
