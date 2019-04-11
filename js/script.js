@@ -56,6 +56,8 @@ const sounds = {
   "ZAQSTEALING": 'https://instaud.io/_/3x3I.mp3',
   "IS IT SQUAD 3?": 'https://instaud.io/_/3x3W.mp3',
   "HUUUUU": 'https://instaud.io/_/3xnU.mp3',
+  "ZAQHEHEHEHE": 'https://instaud.io/_/3xxN.mp3',
+  "FeelsUsedMan": 'https://instaud.io/_/3xxy.mp3',
 }
 
 let audios = {}
