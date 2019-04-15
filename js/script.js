@@ -147,4 +147,4 @@ var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766
 var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766312/1.0').appendTo($('#ZAQGASM'))
 var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766312/1.0').appendTo($('#THAT-69'))
 var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766284/1.0').appendTo($('#GDI-MARK'))
-var img = $('<img>').attr('src', 'https://cdn.frankerfacez.com/8a/52/8a52b199947f5e003191e6d4ddffc49b.png').appendTo($('#GOOD-SHIT-HAYES'))
+var img = $('<img>').attr('src', 'https://cdn.frankerfacez.com/f5/d5/f5d54c6db19d5db92f940744e8c86bba.PNG').appendTo($('#GOOD-SHIT-HAYES'))
