@@ -60,6 +60,7 @@ const sounds = {
   "FeelsUsedMan": 'https://instaud.io/_/3xxy.mp3',
   "GDI MARK": 'https://instaud.io/_/3ykV.mp3',
   "ZAQDOLPHIN": 'https://instaud.io/_/3ykY.mp3',
+  "FeelsBadMan": 'https://instaud.io/_/3yo2.mp3',
 }
 
 let audios = {}
@@ -146,3 +147,4 @@ var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766
 var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766312/1.0').appendTo($('#ZAQGASM'))
 var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766312/1.0').appendTo($('#THAT-69'))
 var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766284/1.0').appendTo($('#GDI-MARK'))
+var img = $('<img>').attr('src', 'https://cdn.frankerfacez.com/8a/52/8a52b199947f5e003191e6d4ddffc49b.png').appendTo($('#GOOD-SHIT-HAYES'))
