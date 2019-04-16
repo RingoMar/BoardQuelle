@@ -60,6 +60,9 @@ const sounds = {
   "GDI MARK": 'https://cdn.discordapp.com/attachments/567195386423279629/567196218996817920/GDI_MARK.mp3',
   "ZAQDOLPHIN": 'https://cdn.discordapp.com/attachments/567195386423279629/567196710577897474/zaqDolphin.mp3',
   "FeelsBadMan": 'https://cdn.discordapp.com/attachments/567195386423279629/567196199774584842/FeelsBadMan.mp3',
+  "HEAD SIREN":'https://cdn.discordapp.com/attachments/567195386423279629/567688118870867983/Head_Siren.mp3',
+  "MY NIBS":'https://cdn.discordapp.com/attachments/567195386423279629/567688125569040413/my_nibs_are_fine.mp3',
+  "THEY SEE US ROLLIN'":'https://cdn.discordapp.com/attachments/567195386423279629/567688127905398794/They_see_us_rollin.mp3',
 }
 
 let audios = {}
