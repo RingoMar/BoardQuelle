@@ -63,6 +63,8 @@ const sounds = {
   "HEAD SIREN":'https://cdn.discordapp.com/attachments/567195386423279629/567688118870867983/Head_Siren.mp3',
   "MY NIBS":'https://cdn.discordapp.com/attachments/567195386423279629/567688125569040413/my_nibs_are_fine.mp3',
   "THEY SEE US ROLLIN'":'https://cdn.discordapp.com/attachments/567195386423279629/567688127905398794/They_see_us_rollin.mp3',
+  "SHOULD PROBE":'https://cdn.discordapp.com/attachments/567195386423279629/568584137305227275/should_probe.mp3',
+  "CRUSH PUSS":'https://cdn.discordapp.com/attachments/567195386423279629/568584017688002561/crush_puss.mp3',
 }
 
 let audios = {}
@@ -91,6 +93,7 @@ for (let title of Object.keys(audios)) {
 
 board.addEventListener('click', function (event) {
   let audio = audios[event.target.dataset['audio']]
+  
   if (audio) {
     for (let audio of Object.values(audios)) {
       audio.pause()
