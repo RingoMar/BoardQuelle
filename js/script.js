@@ -65,6 +65,8 @@ const sounds = {
   "THEY SEE US ROLLIN'":'https://cdn.discordapp.com/attachments/567195386423279629/567688127905398794/They_see_us_rollin.mp3',
   "SHOULD PROBE":'https://cdn.discordapp.com/attachments/567195386423279629/568584137305227275/should_probe.mp3',
   "CRUSH PUSS":'https://cdn.discordapp.com/attachments/567195386423279629/568584017688002561/crush_puss.mp3',
+  "2 AT A TIME":'https://cdn.discordapp.com/attachments/567195386423279629/569979125050245121/2_at_a_time.mp3',
+  "WHEEEEW":'https://cdn.discordapp.com/attachments/567195386423279629/569979308483805253/Wheewww.mp3',
 }
 
 let audios = {}
@@ -152,4 +154,5 @@ var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766
 var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766312/1.0').appendTo($('#ZAQGASM'))
 var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766312/1.0').appendTo($('#THAT-69'))
 var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766284/1.0').appendTo($('#GDI-MARK'))
+var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766312/1.0').appendTo($('#WHEEEEW'))
 var img = $('<img>').attr('src', 'https://cdn.frankerfacez.com/f5/d5/f5d54c6db19d5db92f940744e8c86bba.PNG').appendTo($('#GOOD-SHIT-HAYES'))
