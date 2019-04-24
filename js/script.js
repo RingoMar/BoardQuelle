@@ -67,7 +67,9 @@ const sounds = {
   "CRUSH PUSS":'https://cdn.discordapp.com/attachments/567195386423279629/568584017688002561/crush_puss.mp3',
   "2 AT A TIME":'https://cdn.discordapp.com/attachments/567195386423279629/569979125050245121/2_at_a_time.mp3',
   "WHEEEEW":'https://cdn.discordapp.com/attachments/567195386423279629/569979308483805253/Wheewww.mp3',
+  "ZAQ CRINGE":'https://cdn.discordapp.com/attachments/567195386423279629/570585631470911499/zaqcringe.mp3',
 }
+
 
 let audios = {}
 for (let [title, url] of Object.entries(sounds)) {

@@ -505,7 +505,8 @@ button#f-reset:hover {
 button#lewd,
 button#fun,
 button#songs,
-button#spamclip {
+button#spamclip,
+button#NEW-S {
   background: none !important;
   border: 2px solid !important;
   transition: 0.25s !important;
@@ -525,7 +526,8 @@ button#songs {
 
 }
 
-button#spamclip {
+button#spamclip,
+button#NEW-S {
   color: #8fc866 !important;
 
 }
@@ -555,7 +557,9 @@ button#songs:focus {
 }
 
 button#spamclip:hover,
-button#spamclip:focus {
+button#spamclip:focus,
+button#NEW-S:hover,
+button#NEW-S:focus {
   box-shadow: inset 0 -3.25em 0 0 #66c887 !important;
   border-color: #66c887 !important;
   color: #fff !important;
