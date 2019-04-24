@@ -463,3 +463,100 @@ i.fa.fa-chevron-circle-right.fa-3x:hover {
   border: 0px;
 }
 
+i.fa.fa-ban {
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px !important;
+}
+
+.btn-fl {
+  margin: auto;
+  padding: 10px;
+}
+
+.btns-row {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+h3#f-id {
+  font-weight: bold;
+  text-align: center;
+  color: #8a7047;
+}
+
+button#f-reset {
+  background: none !important;
+  border: 2px solid !important;
+  color: #fff !important;
+  background-color: #e45858 !important;
+  transition: 0.25s !important;
+}
+
+button#f-reset:hover {
+  box-shadow: inset 6.5em 0 0 0 #e45858 !important;
+  border-color: #e45858 !important;
+  color: #fff !important;
+}
+
+button#lewd,
+button#fun,
+button#songs,
+button#spamclip {
+  background: none !important;
+  border: 2px solid !important;
+  transition: 0.25s !important;
+}
+
+button#lewd {
+  color: #ef6eae !important;
+}
+
+button#fun {
+  color: #e4cb58 !important;
+
+}
+
+button#songs {
+  color: #a972cb !important;
+
+}
+
+button#spamclip {
+  color: #8fc866 !important;
+
+}
+
+button#lewd:hover,
+button#lewd:focus {
+  box-shadow: inset 0 -3.25em 0 0 #ef8f6e !important;
+  border-color: #ef8f6e !important;
+  color: #fff !important;
+
+}
+
+button#fun:hover,
+button#fun:focus {
+  box-shadow: inset 0 -3.25em 0 0 #e4cb58 !important;
+  border-color: #e4cb58 !important;
+  color: #fff !important;
+
+}
+
+button#songs:hover,
+button#songs:focus {
+  box-shadow: inset 0 -3.25em 0 0 #cb72aa !important;
+  border-color: #cb72aa !important;
+  color: #fff !important;
+
+}
+
+button#spamclip:hover,
+button#spamclip:focus {
+  box-shadow: inset 0 -3.25em 0 0 #66c887 !important;
+  border-color: #66c887 !important;
+  color: #fff !important;
+
+}
