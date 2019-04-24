@@ -67,6 +67,8 @@ function spam() {
   $("#board button").not(".spamc").css("display", "none");
 }
 // spam -able
+
+// new 
 var newsounds = []
 
 var nn;
@@ -85,6 +87,8 @@ function NEWC() {
   $("#board button").css("display", "inline-flex");
   $("#board button").not(".news").css("display", "none");
 }
+
+// new 
 
 /* ########## REST ALL FILTERS ############# */
 
