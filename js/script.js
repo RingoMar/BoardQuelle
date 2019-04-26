@@ -22,7 +22,7 @@ const sounds = {
   'HEY JERRY': 'https://cdn.discordapp.com/attachments/567195386423279629/567196265147006988/HEY_JERRY.mp3',
   'KERFUFFLES': 'https://cdn.discordapp.com/attachments/567195386423279629/567196284000141317/Kerfuffles.mp3',
   'CLEANING THE AMBO': 'https://cdn.discordapp.com/attachments/567195386423279629/567196150755754014/Cleaning_the_Ambo.mp3',
-  'TIER 3': 'https://cdn.discordapp.com/attachments/567195386423279629/567196645943672841/Tier_3_Sub_Song.mp3'  ,
+  'TIER 3': 'https://cdn.discordapp.com/attachments/567195386423279629/567196645943672841/Tier_3_Sub_Song.mp3',
   'WHAT STRUTTIN LIKES': 'https://cdn.discordapp.com/attachments/567195386423279629/567196343714447371/Of_course_Struttin_likes_BBC.mp3',
   'BACKSIDE': 'https://cdn.discordapp.com/attachments/567195386423279629/567196122422968321/backside.mp3',
   'SELFIE': 'https://cdn.discordapp.com/attachments/567195386423279629/567196411586674689/selfie.mp3',
@@ -60,17 +60,17 @@ const sounds = {
   "GDI MARK": 'https://cdn.discordapp.com/attachments/567195386423279629/567196218996817920/GDI_MARK.mp3',
   "ZAQDOLPHIN": 'https://cdn.discordapp.com/attachments/567195386423279629/567196710577897474/zaqDolphin.mp3',
   "FeelsBadMan": 'https://cdn.discordapp.com/attachments/567195386423279629/567196199774584842/FeelsBadMan.mp3',
-  "HEAD SIREN":'https://cdn.discordapp.com/attachments/567195386423279629/567688118870867983/Head_Siren.mp3',
-  "MY NIBS":'https://cdn.discordapp.com/attachments/567195386423279629/567688125569040413/my_nibs_are_fine.mp3',
-  "THEY SEE US ROLLIN'":'https://cdn.discordapp.com/attachments/567195386423279629/567688127905398794/They_see_us_rollin.mp3',
-  "SHOULD PROBE":'https://cdn.discordapp.com/attachments/567195386423279629/568584137305227275/should_probe.mp3',
-  "CRUSH PUSS":'https://cdn.discordapp.com/attachments/567195386423279629/568584017688002561/crush_puss.mp3',
-  "2 AT A TIME":'https://cdn.discordapp.com/attachments/567195386423279629/569979125050245121/2_at_a_time.mp3',
-  "WHEEEEW":'https://cdn.discordapp.com/attachments/567195386423279629/569979308483805253/Wheewww.mp3',
-  "ZAQ CRINGE":'https://cdn.discordapp.com/attachments/567195386423279629/570585631470911499/zaqcringe.mp3',
-  "10-69":'https://cdn.discordapp.com/attachments/567195386423279629/570677349138563084/10-69.mp3',
-  "GET IT UP":'https://cdn.discordapp.com/attachments/567195386423279629/570677372932718781/get_it_up.mp3',
-  "GDD":'https://cdn.discordapp.com/attachments/567195386423279629/570677400724176904/GDD.mp3',
+  "HEAD SIREN": 'https://cdn.discordapp.com/attachments/567195386423279629/567688118870867983/Head_Siren.mp3',
+  "MY NIBS": 'https://cdn.discordapp.com/attachments/567195386423279629/567688125569040413/my_nibs_are_fine.mp3',
+  "THEY SEE US ROLLIN'": 'https://cdn.discordapp.com/attachments/567195386423279629/567688127905398794/They_see_us_rollin.mp3',
+  "SHOULD PROBE": 'https://cdn.discordapp.com/attachments/567195386423279629/568584137305227275/should_probe.mp3',
+  "CRUSH PUSS": 'https://cdn.discordapp.com/attachments/567195386423279629/568584017688002561/crush_puss.mp3',
+  "2 AT A TIME": 'https://cdn.discordapp.com/attachments/567195386423279629/569979125050245121/2_at_a_time.mp3',
+  "WHEEEEW": 'https://cdn.discordapp.com/attachments/567195386423279629/569979308483805253/Wheewww.mp3',
+  "ZAQ CRINGE": 'https://cdn.discordapp.com/attachments/567195386423279629/570585631470911499/zaqcringe.mp3',
+  "10-69": 'https://cdn.discordapp.com/attachments/567195386423279629/570677349138563084/10-69.mp3',
+  "GET IT UP": 'https://cdn.discordapp.com/attachments/567195386423279629/570677372932718781/get_it_up.mp3',
+  "GDD": 'https://cdn.discordapp.com/attachments/567195386423279629/570677400724176904/GDD.mp3',
 }
 
 let audios = {}
@@ -92,24 +92,40 @@ for (let title of Object.keys(audios)) {
     var timeString = date.toISOString().substr(11, 8)
     document.getElementById('time').innerHTML = timeString
     document.getElementById('lastplay').innerHTML = title
-  // document.getElementById("lastplay").innerHTML = id.target.id
+    // document.getElementById("lastplay").innerHTML = id.target.id
   }
   board.appendChild(button)
 }
 
+function newplaying() {
+  document.getElementById('time').innerHTML = '00:00:00'
+  document.getElementById('lastplay').innerHTML = '------'
+}
+
 board.addEventListener('click', function (event) {
   let audio = audios[event.target.dataset['audio']]
-  
-  if (audio) {
-    for (let audio of Object.values(audios)) {
-      audio.pause()
-      audio.currentTime = 0
+  audio.addEventListener('ended', function (event) {
+    setTimeout(newplaying, 5000);
+    newplaying();
+  })
+  if (audio.networkState === 2) {
+    console.log("[NOT LOADED] Not playng beacuse its still loading.. Error code: ", audio.networkState)
+    // Still loading...
+  };
+  if (audio.readyState >= 2) {
+    if (audio) {
+      for (let audio of Object.values(audios)) {
+        audio.pause()
+        audio.currentTime = 0
+      }
+      audio.play()
     }
-    audio.play()
   }
 })
 
-function stopAudio () {
+
+
+function stopAudio() {
   let stop = audios[event.target.dataset['audio']]
   document.getElementById('time').innerHTML = '00:00:00'
   document.getElementById('lastplay').innerHTML = '------'
@@ -121,19 +137,19 @@ function stopAudio () {
 
 var bbtv = new Array('https://cdn.betterttv.net/emote/5b1c23eaae1b166cf54e203e/3x', 'https://cdn.betterttv.net/emote/5a5ed26e6bcd9a06f4fc7de6/3x', 'https://cdn.betterttv.net/emote/5b47a5af0f10311f6e9cf8e3/3x', 'https://cdn.betterttv.net/emote/5b47a5c90f10311f6e9cf8e4/3x', 'https://cdn.betterttv.net/emote/5b915f874cc67c7ad8196855/3x', 'https://cdn.betterttv.net/emote/5b9ab54fe87c0e590d167aba/3x', 'https://cdn.betterttv.net/emote/5ba302062192445767f61a0a/3x', 'https://cdn.betterttv.net/emote/5bcf5c2c4d02f55ed86a7361/3x', 'https://cdn.betterttv.net/emote/5c1dc8c0f7fd1c1c345d1e7f/3x', 'https://cdn.betterttv.net/emote/5c63a3161cbe12203117ac22/3x', 'https://cdn.betterttv.net/emote/5992549c6782b936bdeafe1b/3x', 'https://cdn.betterttv.net/emote/5a5ed3456bcd9a06f4fc7dee/3x', 'https://cdn.betterttv.net/emote/5bcf5c024d02f55ed86a735d/3x', 'https://cdn.discordapp.com/emojis/454150085077499915.gif?v=1', 'https://cdn.discordapp.com/emojis/453335514154795009.png?v=1')
 
-function bttvemotes () {
+function bttvemotes() {
   var randomNum = Math.floor(Math.random() * bbtv.length)
   document.getElementById('gifmeme').src = bbtv[randomNum]
 }
 
-function SetVolume (val) {
+function SetVolume(val) {
   let volume = audios[event.target.dataset['audio']]
   for (let volume of Object.values(audios)) {
     volume.volume = val / 100
   }
 }
 
-function objectLength () {
+function objectLength() {
   var result = 0
   for (var prop in sounds) {
     if (sounds.hasOwnProperty(prop)) {
