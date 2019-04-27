@@ -70,7 +70,8 @@ const sounds = {
   "ZAQ CRINGE": 'https://cdn.discordapp.com/attachments/567195386423279629/570585631470911499/zaqcringe.mp3',
   "10-69": 'https://cdn.discordapp.com/attachments/567195386423279629/570677349138563084/10-69.mp3',
   "GET IT UP": 'https://cdn.discordapp.com/attachments/567195386423279629/570677372932718781/get_it_up.mp3',
-  "GDD": 'https://cdn.discordapp.com/attachments/567195386423279629/570677400724176904/GDD.mp3',
+  "GDD": 'https://cdn.discordapp.com/attachments/567195386423279629/571746016101924904/GDD.mp3',
+  "TOO BIG": 'https://cdn.discordapp.com/attachments/567195386423279629/571746027200184324/too_big.mp3',
 }
 
 let audios = {}
@@ -97,17 +98,9 @@ for (let title of Object.keys(audios)) {
   board.appendChild(button)
 }
 
-function newplaying() {
-  document.getElementById('time').innerHTML = '00:00:00'
-  document.getElementById('lastplay').innerHTML = '------'
-}
 
 board.addEventListener('click', function (event) {
   let audio = audios[event.target.dataset['audio']]
-  audio.addEventListener('ended', function (event) {
-    setTimeout(newplaying, 5000);
-    newplaying();
-  })
   if (audio.networkState === 2) {
     console.log("[NOT LOADED] Not playng beacuse its still loading.. Error code: ", audio.networkState)
     // Still loading...
@@ -121,6 +114,14 @@ board.addEventListener('click', function (event) {
       audio.play()
     }
   }
+  audio.addEventListener('ended', function (event) {
+    setTimeout(function () {
+    document.getElementById('time').innerHTML = '00:00:00'
+    document.getElementById('lastplay').innerHTML = '------'
+  }, 10000);
+    // setTimeout(newplaying, 10);
+    // newplaying();
+  })
 })
 
 
