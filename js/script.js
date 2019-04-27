@@ -170,10 +170,12 @@ $(document).ready(function () {
 })
 
 document.getElementById('scount').innerHTML = objectLength()
+var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766284/1.0').appendTo($('#GDI-MARK'))
+var img = $('<img>').attr('src', 'https://cdn.frankerfacez.com/f5/d5/f5d54c6db19d5db92f940744e8c86bba.PNG').appendTo($('#GOOD-SHIT-HAYES'))
+
 var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766312/1.0').appendTo($('#CAN-I-FIT'))
 var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766312/1.0').appendTo($('#CLEANING-THE-AMBO'))
 var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766312/1.0').appendTo($('#ZAQGASM'))
 var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766312/1.0').appendTo($('#THAT-69'))
-var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766284/1.0').appendTo($('#GDI-MARK'))
 var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766312/1.0').appendTo($('#WHEEEEW'))
-var img = $('<img>').attr('src', 'https://cdn.frankerfacez.com/f5/d5/f5d54c6db19d5db92f940744e8c86bba.PNG').appendTo($('#GOOD-SHIT-HAYES'))
+var img = $('<img>').attr('src', 'https://static-cdn.jtvnw.net/emoticons/v1/1766312/1.0').appendTo($('#TOO-BIG'))
