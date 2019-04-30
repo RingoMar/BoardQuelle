@@ -72,6 +72,7 @@ const sounds = {
   "GET IT UP": 'https://cdn.discordapp.com/attachments/567195386423279629/570677372932718781/get_it_up.mp3',
   "GDD": 'https://cdn.discordapp.com/attachments/567195386423279629/571746016101924904/GDD.mp3',
   "TOO BIG": 'https://cdn.discordapp.com/attachments/567195386423279629/571746027200184324/too_big.mp3',
+  "TAG TEAM": 'https://cdn.discordapp.com/attachments/567195386423279629/572908729465569280/tag_team.mp3',
 }
 
 let audios = {}
