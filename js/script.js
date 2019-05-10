@@ -73,6 +73,8 @@ const sounds = {
   "GDD": 'https://cdn.discordapp.com/attachments/567195386423279629/571746016101924904/GDD.mp3',
   "TOO BIG": 'https://cdn.discordapp.com/attachments/567195386423279629/571746027200184324/too_big.mp3',
   "TAG TEAM": 'https://cdn.discordapp.com/attachments/567195386423279629/572908729465569280/tag_team.mp3',
+  "STICK IT?": 'https://cdn.discordapp.com/attachments/567195386423279629/576448025615138826/Stick_it_where.mp3',
+  "NO WITHNESSES": 'https://cdn.discordapp.com/attachments/567195386423279629/576448071291109397/withnesses.mp3',
 }
 
 let audios = {}
