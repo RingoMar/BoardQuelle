@@ -75,6 +75,7 @@ const sounds = {
   "TAG TEAM": 'https://cdn.discordapp.com/attachments/567195386423279629/572908729465569280/tag_team.mp3',
   "STICK IT?": 'https://cdn.discordapp.com/attachments/567195386423279629/576448025615138826/Stick_it_where.mp3',
   "NO WITHNESSES": 'https://cdn.discordapp.com/attachments/567195386423279629/576448071291109397/withnesses.mp3',
+  "HANDS UP": 'https://cdn.discordapp.com/attachments/567195386423279629/580140781168492545/hands_up.mp3',
 }
 
 let audios = {}
