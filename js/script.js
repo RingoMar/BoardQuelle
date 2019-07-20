@@ -78,6 +78,8 @@ const sounds = {
   "HANDS UP": 'https://cdn.discordapp.com/attachments/567195386423279629/580140781168492545/hands_up.mp3',
   "ZAQFIT": 'https://cdn.discordapp.com/attachments/567195386423279629/594400192774537259/zaqFit.mp3',
   "ZAQPBT": 'https://cdn.discordapp.com/attachments/567195386423279629/594400236760334367/zaqPbt.mp3',
+  "BUTT FACE": 'https://cdn.discordapp.com/attachments/567195386423279629/602246908433530909/butt_face.mp3',
+  "OH WA AH AH AH": 'https://cdn.discordapp.com/attachments/567195386423279629/602247038318411818/oh_wa_ah.mp3',
 }
 
 let audios = {}
